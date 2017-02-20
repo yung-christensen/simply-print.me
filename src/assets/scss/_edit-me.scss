@@ -1,0 +1,310 @@
+.background {
+    height: 60vh;
+    background: $simply-pink;
+    margin-top: -60vh;
+}
+
+.top-nav {
+    height: 3rem;
+    background: $white;
+    align-items: center;
+
+    a {
+        color: black;
+    }
+
+    h5 {
+        margin-left: 3rem;
+        margin-bottom: 0rem;
+    }
+}
+
+.sidebar {
+    height: 100%;
+    background: $white;
+    width: 3rem;
+    padding-top: 3rem;
+}
+
+.btn-menu {
+    height: 5rem;
+    background: $simply-pink;
+
+    svg {
+        height: 100%;
+        width: 100%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        fill: $white;
+    }
+}
+
+.wrap {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.edit {
+    height: 100%;
+    margin-top: -3rem;
+
+    .controls {
+        border-right: 7px dotted $white;
+
+        .headline {
+            margin-top: 3rem;
+            height: 34vh;
+            display: flex;
+            align-items: center;
+        }
+
+        h1 {
+            font-size: 4.5rem;
+            font-weight: bold;
+            line-height: 1.2;
+        }
+
+        #btn-save {
+            height: 2.2rem;
+            width: 13rem;
+            border-radius: 20px;
+            border: 2px solid $white;
+            color: $white;
+            margin-top: 2rem;
+            text-align: center;
+            line-height: 1.7;
+            background: none;
+        }
+
+        .controls-wrapper {
+            height: 60vh;
+            //display: flex;
+            //align-items: center;
+            .wrap-again {
+                position: relative;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+
+        .carousel {
+            background: #c61c4e;
+            border-radius: 100px;
+
+            .flickity-viewport {
+                box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.05);
+                border-radius: 100px;
+            }
+
+            .carousel-cell {
+                width: 100%;
+                /* full width */
+                height: 110px;
+                /* height of carousel */
+                button {
+                    background: none;
+                }
+
+                h4 {
+                    margin-bottom: 0;
+                    line-height: 1.3;
+                    color: $white;
+                    text-align: center;
+                }
+
+                h4:nth-child(2) {
+                    text-transform: uppercase;
+                    margin-top: 0;
+                }
+            }
+            .montserrat h4 {
+                font-family: 'Montserrat';
+            }
+            .vollkorn h4 {
+                font-family: 'VollkornRegular';
+            }
+
+            .bajern h4 {
+                font-family: 'Bajern';
+            }
+
+            .kilauea h4 {
+                font-family: 'Kilauea';
+            }
+
+            .manifesto h4 {
+                font-family: 'Manifesto';
+            }
+
+            .ordnung h4 {
+                font-family: 'Ordnung';
+            }
+
+            .kust h4 {
+                font-family: 'Kust';
+            }
+
+            .antre h4 {
+                font-family: 'Antre';
+            }
+
+            .azedo h4 {
+                font-family: 'AzedoBold';
+            }
+
+            .butler h4 {
+                font-family: 'Butler';
+            }
+
+            .kankin h4 {
+                font-family: 'Kankin';
+            }
+
+            .koliko h4 {
+                font-family: 'KolikoRegular';
+            }
+
+            .modernesans h4 {
+                font-family: 'ModerneSans';
+            }
+        }
+
+        .flickity-prev-next-button {
+            width: 60px;
+            height: 60px;
+            background: transparent;
+        }
+
+        .flickity-prev-next-button:hover {
+            background: transparent;
+        }
+        /* arrow color */
+        .flickity-prev-next-button .arrow {
+            fill: white;
+        }
+
+        .flickity-prev-next-button.no-svg {
+            color: white;
+        }
+
+        .type .carousel {}
+
+        .colour {
+            margin-top: 2rem;
+
+            .carousel-cell {
+                .row {
+                    margin: 0;
+                    height: 100%;
+                }
+
+                .colour-block {
+                    height: 60px;
+                    width: 60px;
+                    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+                }
+
+                h5 {
+                    margin: 0;
+                    text-align: left;
+                    line-height: 1.3;
+                    color: $white;
+                    text-transform: lowercase;
+                }
+
+                h5:nth-child(2) {
+                    text-transform: uppercase;
+                }
+
+                .text {
+                    margin-left: 20px;
+                }
+            }
+
+            .pink .colour-block {
+                background-color: $simply-pink;
+            }
+
+            .blue .colour-block {
+                background-color: #002EA7;
+            }
+
+            .turqouise .colour-block {
+                background-color: #4CCEAC;
+            }
+        }
+    }
+
+    .content {
+        //border: 0.7rem solid $white;
+        margin: auto;
+        position: relative;
+        padding-top: 3rem;
+        font-family: 'Montserrat';
+        //box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+        // Abmessungen Druckbogen A4 210 x 297 mm / Ränder 21.6mm je oben und unten / 8mm je links und rechts
+        // Breite in rem: 2 x 21.3rem pro Etikett + 2 x 1.75rem pro Seitenrand = 46.17rem
+        // Höhe in rem: 6 x 9.37rem pro Etikett + 2 x 4.76rem pro Seitenrand = 65.74rem
+        // Einzeletikett 97 x 42,3 mm = 0,44
+        // 21.3rem x 9.37 rem
+        // Avery Zweckform 3659
+        // large screen: 57 % Darstellung der original Abmessung
+        .row {
+            //border-top: 4.76rem solid $simply-pink;
+            //border-bottom: 4.76rem solid $simply-pink;
+            //border-left: 1.75rem solid $simply-pink;
+            //border-right: 1.75rem solid $simply-pink;
+            //border-radius: 0.3rem;
+            //width: 46.48rem;
+            border-top: 12.31mm solid $simply-pink;
+            border-bottom: 12.31mm solid $simply-pink;
+            border-left: 4.56mm solid $simply-pink;
+            border-right: 4.56mm solid $simply-pink;
+            border-radius: 0.3rem;
+            width: 120.7mm;
+            margin: 0 auto;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.75);
+        }
+
+        .columns:nth-of-type(odd) {
+            border-right: 1px solid $white;
+            border-left: 1px solid $white;
+        }
+
+        .columns:nth-of-type(even) {
+            border-right: 1px solid $white;
+        }
+
+        .columns:nth-last-child(-n+2) {
+            border-bottom: 1px solid $white;
+        }
+
+        .columns {
+            display: table-cell;
+            //height: 9.37rem;
+            //width: 21.3rem;
+            height: 24.15mm;
+            width: 55.29mm;
+            background: $simply-pink;
+            border-top: 1px solid $white;
+
+            input {
+                margin: 0 auto;
+                //height: 9.37rem;
+                //width: 21.3rem;
+                height: 24.1mm;
+                width: 55.29mm;
+                padding: 0 1.5rem;
+                resize: none;
+                text-align: center;
+                display: inline-block;
+                vertical-align: middle;
+                background: none;
+                border: 0;
+                color: white;
+                box-shadow: none;
+            }
+        }
+    }
+}
